@@ -249,7 +249,7 @@ def run_mortgage_calculator_app():
                         f"Estimated House Price Could Afford (inc deposit): £{principal_amount + deposit_amount:,.2f}")
                     print(f"Consisting of Deposit: £{deposit_amount:,.2f}")
                     print(
-                        f"Total House Price (affordable): £{principal_amount:,.2f}")
+                        f"Mortgage Amount: £{principal_amount:,.2f}")
                     print(f"-----------------------------------\n")
                 else:
                     print(f"\nError: {principal_amount}\n")
