@@ -143,7 +143,7 @@ def run_mortgage_calculator_app():
     while True:
         menu_options = [
             "Calculate Monthly Mortgage Payment (M)",
-            "Calculate Mortgage Loan Amount (P)",
+            "Calculate Affordable House Price (P)",
             "Exit"
         ]
 
@@ -202,7 +202,7 @@ def run_mortgage_calculator_app():
         elif selected_choice_index == 1:
             clear_screen()
             print("-----------------------------------------")
-            print("   Calculate Mortgage Loan Amount (P)    ")
+            print("   Calculate Affordable House Price (P)    ")
             print("-----------------------------------------")
             try:
                 monthly_payment_str = input(
@@ -248,7 +248,8 @@ def run_mortgage_calculator_app():
                     print(
                         f"Estimated House Price Could Afford (inc deposit): £{principal_amount + deposit_amount:,.2f}")
                     print(f"Consisting of Deposit: £{deposit_amount:,.2f}")
-                    print(f"Mortgage amount: £{principal_amount:,.2f}")
+                    print(
+                        f"Total House Price (affordable): £{principal_amount:,.2f}")
                     print(f"-----------------------------------\n")
                 else:
                     print(f"\nError: {principal_amount}\n")
